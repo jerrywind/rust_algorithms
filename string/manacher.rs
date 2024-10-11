@@ -33,7 +33,8 @@
     // MEMO: We need to detect odd palindrome as well,
     // therefore, inserting dummy string so that
     // we can find a pair with dummy center character.
-    let mut extend_chars: Vec<char> = Vec::with_capacity(s.len() * 2 + 1);
+    //let mut extend_chars: Vec<char> = Vec::with_capacity(s.len() * 2 + 1);
+    let mut extend_chars:Vec<char> = Vec::new();
     for c in s.chars() {
         extend_chars.push('#');
         extend_chars.push(c);
