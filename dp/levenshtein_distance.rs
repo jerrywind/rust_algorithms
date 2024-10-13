@@ -69,5 +69,5 @@ fn main() {
     let input2_str = input2.trim().to_string();
         
     let result = levenshtein_distance(input1_str, input2_str, cost_add, cost_delete, cost_replace);
-    println!("Largest palindrome is ：{}", result);
+    println!("Edit distance is : {}  (cost_add : {}, cost_delete: {}, cost_replace: {})", result, cost_add, cost_delete, cost_replace);
 }
