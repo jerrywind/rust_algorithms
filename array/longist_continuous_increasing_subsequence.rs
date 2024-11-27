@@ -1,7 +1,7 @@
 // stem from : https://leetcode.cn/problems/longest-continuous-increasing-subsequence
 // not really the same, the result here is to return the longist continuous increasing sub sequence.
 
-fn find_length_of_lcis(nums: Vec<i32>) -> Vec<i32> {
+pub fn find_length_of_lcis(nums: Vec<i32>) -> Vec<i32> {
     let mut max_l = 0;
     let mut max_start = 0;
     let mut cur_l = 0;
